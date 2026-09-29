@@ -10,6 +10,18 @@
   --white: #ffffff;
 }
 
+@theme inline {
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+
+  --color-ivory: var(--ivory);
+  --color-sand: var(--sand);
+  --color-olive: var(--olive);
+  --color-deep-green: var(--deep-green);
+  --color-terracotta: var(--terracotta);
+  --color-burgundy: var(--burgundy);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -22,7 +34,7 @@ body {
   margin: 0;
   background: var(--ivory);
   color: var(--deep-green);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), sans-serif;
 }
 
 ::selection {
